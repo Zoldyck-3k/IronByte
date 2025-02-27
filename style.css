@@ -1,0 +1,569 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+::-webkit-scrollbar {
+    width: 1.3rem;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background: #797979;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #222224;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f9f9f9;
+  }
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: EDE8F5;
+    font-size: 3vw;
+}
+
+.header{
+    
+    background-color: ADBDDA;   
+    height: 70px;
+    top: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+nav{  
+    height: 70px;
+    color: 3D52A0;  
+    FONT-FAMILY: math;
+}
+
+label.logo{
+    font-size: 45px;
+    font-weight: bold;
+    padding-left: 45px;
+
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+nav ul li a{
+     color: inherit; 
+    font-weight: normal; 
+    cursor: pointer;      
+}
+
+ @media (max-width: 431px) {
+  .header{
+    height: 40px;
+  }
+  label.logo{
+    font-size: 30px;
+  }
+  nav{
+    width: 100%;
+  }
+  nav ul{
+    display: none;
+  }
+  .sub-nav{
+    display: none;
+  }
+}
+
+
+.slider{
+    align-items: center;
+}
+
+.slidepc{
+    width: 100%;
+}
+
+.slidemb{
+    display: none;
+}
+
+@media (max-width:431px){
+    .slidemb{
+      width: 100%;
+        display: block;
+    }
+    .slidepc{
+        display: none;
+    }
+
+}
+
+    /* .................................................................................................. */
+    /* .................................................................................................. */
+
+
+  /* Section Styles  */
+  .section {
+    margin-top: 70px;
+    color: #3d52a0;
+    font-family: auto;
+    text-align: center;
+}
+
+.responsive-image {
+    width: 60%;
+    border-radius: 10vh;
+    padding-top: 3vh;
+}
+
+.about-me-box {
+    border-radius: 10px;
+    display: inline-block;
+    width: 80%;
+    background-color: #ADBBDA;
+    padding: 20px;
+}
+
+.section p {
+    font-size: 3vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+}
+
+.sub-contact {
+    display: flex;
+    justify-content: space-around; /* Optional: space items evenly */
+}
+
+.button-link {
+    font-size: 3vh;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8697c4; /* Added # before the color code */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 2vh;
+}
+
+.button-link:hover {
+    background-color: #0095ff;
+}
+
+@media (max-width: 431px) {
+    .about-me-box {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .section p {
+        font-size: 4vw;
+        padding-left: 1vh;
+        padding-right: 1vh;
+    }
+    
+    .button-link {
+        padding: 5px 5px;
+        font-size: 13px;
+    }
+
+    .sub-contact {
+        display: flex; /* Corrected from ruby to flex */
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+    }
+}
+
+
+    /* .................................................................................................. */
+    /* .................................................................................................. */
+/* Existing styles */
+.lang {
+  text-align: center;
+}
+
+#heading {
+  font-family: auto;
+  font-size: 3vw;
+  margin-bottom: 2vh;
+  color: #FF4500; /* Ensure color code is correctly prefixed with # */
+}
+
+.language-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.progress-bar {
+  width: 80%;
+  margin-bottom: 3vh;
+  border: 1px solid DeepSkyBlue;
+  position: relative;
+}
+
+.language-name {
+  font-family: inherit;
+  font-size: 2vw;
+  color: DeepSkyBlue;
+  font-weight: bold;
+}
+
+.progress {
+  height: 2.5vh;
+  background-color: #e0e0e0; 
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: width 1s ease-out; /* Smooth transition for width */
+}
+
+/* Animation styles */
+.progress.animate {
+  transition: width 1s ease-out;
+}
+
+.java-progress {
+  background-color: #FFC107; 
+}
+
+.python-progress {
+  background-color: #FF5722; 
+}
+
+.html-css-progress {
+  background-color: #4CAF50; 
+}
+
+@media (max-width:431px){
+  .progress-bar {
+    width: 95%;
+    }
+    .progress {
+      height: 1.5vh;
+  }
+}
+    /* .................................................................................................. */
+
+    /* .................................................................................................. */
+    /* Achivement section */
+
+    .container{
+      text-align: center;
+      max-width: 124rem;
+      padding: 0 1rem;
+      margin: 0 auto;
+    }
+    
+    .text-center {
+      text-align: center;
+    }
+    
+    .section-heading {
+      font-size: 3rem;
+      color: var(--primary);
+      padding: 2rem 0;
+    }
+    
+    .trending-slider {
+      padding: 4rem 0;
+    }
+    
+    @media (max-width: 1440px) {
+      .trending-slider {
+        padding: 7rem 0;
+      }
+    }
+    
+    .trending-slider .swiper-wrapper {
+      height: 52rem;
+      padding: 2rem 0;
+      position: relative;
+    }
+    
+    .trending-slide {
+      width: 37rem;
+      height: 42rem;
+      position: relative;
+      border-radius: 1rem;
+      background: #ADBBDA;
+    }
+    
+    .trending-slide img {
+      padding-top: 3rem;
+      padding-left: 0rem;
+      width: 60%;
+      border-radius: 2rem;
+      object-fit: cover;
+    }
+    
+    .trending-slide-content {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+    
+    .slid-name {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: var(--white);
+    }
+    
+    .swiper-slide-shadow-left,
+    .swiper-slide-shadow-right {
+      display: none;
+    }
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+      background: var(--white);
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+    }
+    
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      font-size: 2rem;
+      color: #222224;
+    }
+    
+    .swiper-pagination-bullet {
+      filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+    }
+    
+    .swiper-pagination-bullet-active {
+      background: var(--primary);
+    }
+    @media (max-width: 769px) {
+      .trending-slide {
+        width: 20rem !important;
+        height: 22rem !important;
+      }
+    
+      .trending-slide img {
+        border-radius: 0;
+        padding-top: 2rem;
+        padding-left: 0;
+        width: 10rem !important;
+        height: 10rem !important;
+      }
+      .swiper {
+        height: 57vw;
+      }
+    }
+    
+    
+    @media (max-width: 431px) {
+      .trending-slide {
+        width: 10rem !important;
+        height: 14rem !important;
+      }
+    
+      .trending-slide img {
+        border-radius: 0;
+        padding-top: 2rem;
+        padding-left: 0;
+        width: 5rem !important;
+        height: 5rem !important;
+      }
+      .swiper{
+        height: 70vw;
+      }
+    }
+    
+
+    /* Gallery Section */
+.gallery {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-item {
+  width: calc(33.333% - 20px); /* Adjust this percentage for the number of items per row */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  padding-left: 2%;
+  object-fit: cover;
+  width: 96%;
+  height: 60%;
+  display: block;
+}
+
+
+    /* Suggesion box */
+
+    .suggestion{
+      margin: 10rem;
+      border-radius: 1rem;
+      background: #adbbda;
+      text-align: center;
+      width:  80%;
+      margin-left: 10%;
+      font-size: 1rem;
+      color: 3d52a0;
+
+    }
+
+    .suggestion h2{
+      font-size: 2rem;
+    }
+    @media (max-width:431px){
+    .suggestion{
+      width:  90%;
+      margin-left: 5%;
+    }.suggestion h2{
+      font-size: 1rem;
+    }
+  }
+  
+    
+    /* .................................................................................................. */
+    /* .................................................................................................. */
+    /* .................................................................................................. */
+    /* .................................................................................................. */
+
+/* Footer Section */
+.footer {
+    background-color: ADBBDA;
+    color: #3D52A0;
+    border-radius: 2vh;
+    text-align: center;
+    margin-top: 10vh;
+    }
+    
+    .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    }
+    
+   /* Resetting default margins for the footer section */
+.footer-section {
+    margin: 0;
+    padding: 0;
+    flex: 1 1 300px;
+}
+
+.footer-section h3 {
+    font-size: 3.5vh;
+    color: #3D52A0; 
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section p {
+    font-family: math;
+    font-size: 3vh;
+    margin: 0; 
+    padding: 0; 
+}
+.footerEmail{
+  text-decoration: none;
+} .footer-bottom {
+  font-family: auto;
+text-align: center;    
+font-size: 2vh;
+}
+
+
+    .footerDp{
+        border-radius: 12vh;
+        width: 35%;
+    }
+    
+
+    .insta{
+        height: 10rem;
+    }
+    .linkedin{
+        height: 8rem;
+    }
+    @media (max-width:768px){
+      .insta{
+        height: 5rem;
+    }
+    .linkedin{
+        height: 4rem;
+    } .footer-bottom { 
+    font-size: 1vh;
+    }
+    }
+    .social-media {
+    list-style: none;
+    padding: 0;
+    }
+    
+    .social-media li {
+    margin-bottom: 5px;
+    }
+    
+    .social-media li a {
+    color: #fff;
+    text-decoration: none;
+    }
+    
+   
+    
+/* HR Styles */
+hr {
+    border: 0;
+    border-top: 1px solid #3D52A0;
+    margin: 40px 0; /* Adjust as necessary for spacing */
+}
+
+
+#slide{
+    padding-top: 18%;
+    height: 50px;
+    width: 50px;
+}
+    
+a:link, a:visited{
+  color: blue;
+}
+
+a:hover ,a:active {
+  color: red;
+}
+
